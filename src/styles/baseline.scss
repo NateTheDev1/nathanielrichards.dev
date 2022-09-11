@@ -6,6 +6,10 @@ body {
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #444;
+
+  p {
+    line-height: 2;
+  }
 }
 
 h1,
