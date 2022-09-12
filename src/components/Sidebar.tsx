@@ -1,15 +1,24 @@
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Searchbox } from "./Searchbox";
+import { TopSidebar } from "./TopSidebar";
 
 export const Sidebar = () => {
   const location = useLocation();
+  const [topDrawerToggle, setTopDrawerToggle] = useState(false);
 
   return (
     <>
-      <div className="md:hidden relative">
+      <TopSidebar open={topDrawerToggle} setOpen={setTopDrawerToggle} />
+      <div className="md:hidden relative z-[1000000]">
         <button
-          title="Contact Sale"
-          className="fixed z-90 top-5 right-8 -z-50 bg-gray-900 w-15 h-15 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-gray-700 hover:drop-shadow-2xl hover:animate-pulse"
+          onClick={() => setTopDrawerToggle(!topDrawerToggle)}
+          title="Open Menu"
+          data-drawer-target="drawer-top-example"
+          data-drawer-show="drawer-top-example"
+          data-drawer-placement="top"
+          aria-controls="drawer-top-example"
+          className="fixed top-5 right-2 -z-50 bg-black p-4 w-15 h-15 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-gray-700 hover:drop-shadow-2xl hover:animate-pulse"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

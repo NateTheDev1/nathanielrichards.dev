@@ -3,10 +3,7 @@ import { IconMediaLink } from "./components/IconMediaLink";
 
 const App = () => {
   return (
-    <div
-      className="justify-between md:w-3/4 px-8 overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-gray-800"
-      style={{ height: "90vh" }}
-    >
+    <div className="justify-between md:w-3/4 md:px-8 px-4 md:overflow-y-scroll md:h-[90vh] h-full scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-gray-800">
       <main style={{ animation: "fadeIn 0.2s" }}>
         <h1 className="text-3xl font-bold">👋🏻 Hey, I'm Nathaniel Richards</h1>
         <p className="mt-8">
@@ -31,6 +28,11 @@ const App = () => {
             href="https://github.com/NateTheDev1"
             title="All About Compilers"
             sub="My journey on figuring out how the heck compilers work and by the end write my own."
+          />
+          <GoalCard
+            disabled={true}
+            title="Editor Building"
+            sub="Build a fully extendable code editor in a language of choice"
           />
           <GoalCard
             disabled={true}

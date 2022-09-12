@@ -7,6 +7,11 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #c9d1d9;
   background: #0d1117;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    overflow: auto;
+  }
 
   p {
     line-height: 2;
