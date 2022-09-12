@@ -18,7 +18,7 @@ export const Sidebar = () => {
           data-drawer-show="drawer-top-example"
           data-drawer-placement="top"
           aria-controls="drawer-top-example"
-          className="fixed top-5 right-2 -z-50 bg-black p-4 w-15 h-15 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-gray-700 hover:drop-shadow-2xl hover:animate-pulse"
+          className="fixed top-7 right-2 -z-50 bg-black p-4 w-15 h-15 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-gray-700 hover:drop-shadow-2xl hover:animate-pulse"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
