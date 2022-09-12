@@ -10,26 +10,28 @@ export const Sidebar = () => {
   return (
     <>
       <TopSidebar open={topDrawerToggle} setOpen={setTopDrawerToggle} />
-      <div className="md:hidden relative z-[1000000]">
-        <button
-          onClick={() => setTopDrawerToggle(!topDrawerToggle)}
-          title="Open Menu"
-          data-drawer-target="drawer-top-example"
-          data-drawer-show="drawer-top-example"
-          data-drawer-placement="top"
-          aria-controls="drawer-top-example"
-          className="fixed top-7 right-2 -z-50 bg-black p-4 w-15 h-15 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-gray-700 hover:drop-shadow-2xl hover:animate-pulse"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-            className="flex-shrink-0 w-6 h-6"
-            fill="currentColor"
+      {!topDrawerToggle && (
+        <div className="md:hidden relative z-[1000000]">
+          <button
+            onClick={() => setTopDrawerToggle(!topDrawerToggle)}
+            title="Open Menu"
+            data-drawer-target="drawer-top-example"
+            data-drawer-show="drawer-top-example"
+            data-drawer-placement="top"
+            aria-controls="drawer-top-example"
+            className="fixed top-12 right-4 bg-gray-800 p-4 w-15 h-15 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-gray-700 hover:drop-shadow-2xl hover:animate-pulse"
           >
-            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-          </svg>
-        </button>
-      </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              className="flex-shrink-0 w-6 h-6"
+              fill="currentColor"
+            >
+              <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+            </svg>
+          </button>
+        </div>
+      )}
       <aside className="md:w-1/3 md:block hidden" aria-label="Sidebar">
         <div className="overflow-y-auto py-4 px-3  rounded bg-gray-800">
           <ul className="space-y-2">
