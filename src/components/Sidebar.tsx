@@ -1,7 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Searchbox } from "./Searchbox";
 
 export const Sidebar = () => {
+  const location = useLocation();
+
+  console.log(location.pathname);
+
   return (
     <aside className="w-1/3" aria-label="Sidebar">
       <div className="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
@@ -12,7 +16,9 @@ export const Sidebar = () => {
           <li>
             <Link
               to="/"
-              className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              className={`flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-700 ${
+                location.pathname === "/" && "text-brand"
+              }`}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
