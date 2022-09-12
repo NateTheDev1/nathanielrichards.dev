@@ -4,7 +4,7 @@ import { IconMediaLink } from "./components/IconMediaLink";
 const App = () => {
   return (
     <div
-      className="justify-between w-3/4 px-8 overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-gray-800"
+      className="justify-between md:w-3/4 px-8 overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-gray-800"
       style={{ height: "90vh" }}
     >
       <main style={{ animation: "fadeIn 0.2s" }}>
@@ -28,9 +28,19 @@ const App = () => {
         </h2>
         <div className="flex flex-col mt-8">
           <GoalCard
-            disabled={true}
+            href="https://github.com/NateTheDev1"
             title="All About Compilers"
             sub="My journey on figuring out how the heck compilers work and by the end write my own."
+          />
+          <GoalCard
+            disabled={true}
+            title="Open Source"
+            sub="Contribute something meaningful to an open source project."
+          />
+          <GoalCard
+            disabled={true}
+            title="Rust Language"
+            sub="Build a full stack project using Rust as the backend server."
           />
         </div>
         <hr className="my-8 mt-12" />

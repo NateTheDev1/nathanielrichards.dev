@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <BrowserRouter>
-    <div className="flex justify-between">
+    <div className="justify-between flex md:flex-row flex-col">
       <Sidebar />
       <Routes>
         <Route path="/" key="main" element={<App />} />

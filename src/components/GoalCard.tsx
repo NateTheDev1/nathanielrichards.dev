@@ -3,7 +3,9 @@ export const GoalCard = ({
   sub,
   disabled = false,
   progress = 0,
+  href,
 }: {
+  href?: string;
   title: string;
   sub: string;
   disabled?: boolean;
@@ -11,9 +13,10 @@ export const GoalCard = ({
 }) => {
   return (
     <a
+      href={href}
       target="_blank"
       className={`my-4 flex flex-col items-left rounded-lg border shadow-md border-gray-700 bg-gray-800 hover:bg-gray-700 ${
-        disabled && "opacity-60 cursor-not-allowed"
+        disabled ? "opacity-60 cursor-not-allowed" : "cursor-pointer"
       }`}
     >
       <div className="flex flex-col justify-between p-4 leading-normal">
