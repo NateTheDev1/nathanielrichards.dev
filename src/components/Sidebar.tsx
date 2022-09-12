@@ -6,7 +6,7 @@ export const Sidebar = () => {
 
   return (
     <aside className="w-1/3" aria-label="Sidebar">
-      <div className="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
+      <div className="overflow-y-auto py-4 px-3  rounded bg-gray-800">
         <ul className="space-y-2">
           <li className="pb-4">
             <Searchbox />
@@ -52,11 +52,11 @@ export const Sidebar = () => {
           <li>
             <Link
               to="/experience"
-              className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              className="flex items-center p-2 text-base font-normal  rounded-lg text-white  hover:bg-gray-700"
             >
               <svg
                 aria-hidden="true"
-                className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                className="flex-shrink-0 w-6 h-6 transition duration-75 text-gray-400  group-hover:text-white"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -67,7 +67,7 @@ export const Sidebar = () => {
               <span className="flex-1 ml-3 whitespace-nowrap">
                 Work Experience
               </span>
-              <span className="inline-flex justify-center items-center p-3 ml-3 w-3 h-3 text-sm font-medium text-blue-600 bg-blue-200 rounded-full dark:bg-blue-900 dark:text-blue-200">
+              <span className="inline-flex justify-center items-center p-3 ml-3 w-3 h-3 text-sm font-medium  rounded-full bg-blue-900 text-blue-200">
                 3
               </span>
             </Link>
@@ -75,19 +75,19 @@ export const Sidebar = () => {
           <li>
             <Link
               to="/projects"
-              className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              className="flex items-center p-2 text-base font-normal rounded-lg text-white hover:bg-gray-700"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
                 aria-hidden="true"
-                className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                className="flex-shrink-0 w-6 h-6 transition duration-75 text-gray-400  group-hover:text-white"
                 fill="currentColor"
               >
                 <path d="M64 480H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H298.5c-17 0-33.3-6.7-45.3-18.7L226.7 50.7c-12-12-28.3-18.7-45.3-18.7H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64z" />
               </svg>
               <span className="flex-1 ml-3 whitespace-nowrap">Projects</span>
-              <span className="inline-flex justify-center items-center p-3 ml-3 w-3 h-3 text-sm font-medium text-blue-600 bg-blue-200 rounded-full dark:bg-blue-900 dark:text-blue-200">
+              <span className="inline-flex justify-center items-center p-3 ml-3 w-3 h-3 text-sm font-medium  rounded-full bg-blue-900 text-blue-200">
                 10
               </span>
             </Link>
@@ -95,13 +95,13 @@ export const Sidebar = () => {
           <li>
             <Link
               to="/contact"
-              className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              className="flex items-center p-2 text-base font-normal rounded-lg text-white hover:bg-gray-700"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
                 aria-hidden="true"
-                className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                className="flex-shrink-0 w-6 h-6 transition duration-75 text-gray-400 group-hover:text-white"
                 fill="currentColor"
               >
                 <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />

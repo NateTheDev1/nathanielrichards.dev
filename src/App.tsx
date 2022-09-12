@@ -1,3 +1,4 @@
+import { GoalCard } from "./components/GoalCard";
 import { IconMediaLink } from "./components/IconMediaLink";
 
 const App = () => {
@@ -22,10 +23,21 @@ const App = () => {
           designing games, apps, and programs since I was 14 and have a strong
           passion about all things tech.
         </p>
+        <h2 className="font-bold mt-8 text-2xl">
+          What I'm Working Towards In 2022-2023
+        </h2>
+        <div className="flex flex-col mt-8">
+          <GoalCard
+            disabled={true}
+            title="All About Compilers"
+            sub="My journey on figuring out how the heck compilers work and by the end write my own."
+          />
+        </div>
+        <hr className="my-8 mt-12" />
         <h2 className="font-bold mt-12 text-2xl">Where Can You Find Me?</h2>
         <p className="my-4">
-          To reach me the fastest, reach out to me through LinkedIn or Email *
-          For Business Inquires, My Email is also the best way to reach me
+          To reach me the fastest, reach out to me through LinkedIn or Email.
+          For business inquiries my email is the best way to reach me.
         </p>
         <div className="flex flex-col">
           <IconMediaLink
@@ -71,20 +83,6 @@ const App = () => {
             name="LinkedIn"
           />
         </div>
-        <h2 className="font-bold mt-8 text-2xl">
-          Goals I'm Working Towards In 2022-2023:
-        </h2>
-        <ul className="list-disc">
-          <li className="mt-4">
-            Learning all about compilers and system development.
-          </li>
-          <li className="mt-4">
-            Learning all about compilers and system development.
-          </li>
-          <li className="mt-4">
-            Learning all about compilers and system development.
-          </li>
-        </ul>
       </main>
     </div>
   );
