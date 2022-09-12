@@ -5,6 +5,18 @@ const App = () => {
   return (
     <div className="justify-between md:w-3/4 md:px-8 px-4 md:overflow-y-scroll md:h-[90vh] h-full scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-gray-800">
       <main style={{ animation: "fadeIn 0.2s" }}>
+        <p className="mb-4 text-xs">
+          This is a new version of my site. Click{" "}
+          <a
+            href="https://legacy.nathanielrichards.dev"
+            className="underline text-brand"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            here
+          </a>{" "}
+          to view the legacy site.
+        </p>
         <h1 className="text-3xl font-bold">👋🏻 Hey, I'm Nathaniel Richards</h1>
         <p className="mt-8">
           This site is about all things code. I am a software engineer and
