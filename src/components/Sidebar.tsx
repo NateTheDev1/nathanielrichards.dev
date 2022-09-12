@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Searchbox } from "./Searchbox";
 import { TopSidebar } from "./TopSidebar";
@@ -6,6 +6,10 @@ import { TopSidebar } from "./TopSidebar";
 export const Sidebar = () => {
   const location = useLocation();
   const [topDrawerToggle, setTopDrawerToggle] = useState(false);
+
+  useEffect(() => {
+    setTopDrawerToggle(false);
+  }, [location]);
 
   return (
     <>
@@ -138,6 +142,18 @@ export const Sidebar = () => {
             </li>
           </ul>
         </div>
+        <p className="mt-4 text-xs">
+          This is a new version of my site. Click{" "}
+          <a
+            href="https://legacy.nathanielrichards.dev"
+            className="underline text-brand"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            here
+          </a>{" "}
+          to view the legacy site.
+        </p>
       </aside>
     </>
   );
