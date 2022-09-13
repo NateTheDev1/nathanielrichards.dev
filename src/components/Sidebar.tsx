@@ -83,7 +83,10 @@ export const Sidebar = () => {
             <li>
               <Link
                 to="/experience"
-                className="flex items-center p-2 text-base font-normal  rounded-lg text-white  hover:bg-gray-700"
+                className={`transition-all flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray-700 ${
+                  location.pathname === "/experience" &&
+                  "text-brand bg-gray-700"
+                }`}
               >
                 <svg
                   aria-hidden="true"
