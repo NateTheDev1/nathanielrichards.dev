@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "../App";
 import Articles from "../pages/Articles";
+import Contact from "../pages/Contact";
 import Experience from "../pages/Experience";
 import Terms from "../pages/Terms";
 import { Sidebar } from "./Sidebar";
@@ -27,6 +28,7 @@ export const Router = () => {
           <Route path="/" key="main" element={!hideSidebar && <App />} />
           <Route path="/articles" element={!hideSidebar && <Articles />} />
           <Route path="/experience" element={!hideSidebar && <Experience />} />
+          <Route path="/contact" element={!hideSidebar && <Contact />} />
         </Routes>
       </div>
     </BrowserRouter>

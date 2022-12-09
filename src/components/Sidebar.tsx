@@ -107,7 +107,7 @@ export const Sidebar = () => {
               </Link>
             </li>
             <li>
-              <Link
+              {/* <Link
                 to="/projects"
                 className="flex items-center p-2 text-base font-normal rounded-lg text-white hover:bg-gray-700"
               >
@@ -124,7 +124,7 @@ export const Sidebar = () => {
                 <span className="inline-flex justify-center items-center p-3 ml-3 w-3 h-3 text-sm font-medium  rounded-full bg-blue-900 text-blue-200">
                   10
                 </span>
-              </Link>
+              </Link> */}
             </li>
             <li>
               <Link
